@@ -1,21 +1,5 @@
 {
-      "connections": [
-        {
-            "id": "1",
-            "uuid": "iflsjkoskjdklsd",
-            "status": "connected"
-        },
-        {
-            "id": "2",
-            "uuid": "elskdj09903jeq",
-            "status": "disconnected"
-        },
-        {
-            "id": "3",
-            "uuid": "0192iojr3wef",
-            "status": "disconnected"
-        }
-    ],
+      "connections": [],
 
   "users": [
     {
