@@ -19,7 +19,7 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: clear database
-      run: echo "{}" > db.json
+      run: echo "{}" > ${GITHUB_WORKSPACE}/db.json
       
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
