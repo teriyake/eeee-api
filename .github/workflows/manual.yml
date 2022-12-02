@@ -20,12 +20,3 @@ jobs:
     # Runs a single command using the runners shell
     - name: clear database
       run: echo "{}" > db.json
-    - name: commit files
-      run: |
-        git config user.email "action@github.com"
-        git config user.name "GitHub Action"
-        git commit -m "clear database" -a
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
