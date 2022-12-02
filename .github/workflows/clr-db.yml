@@ -22,7 +22,15 @@ jobs:
         ref: ${{ github.head_ref }}
         
     - name: clear database
-      run: echo "{}" > db.json
+      run: |
+        echo "{" > db.json
+        echo '  "connections": [],' >> db.json
+        echo '  "entropy": [],' >> db.json
+        echo '  "elements": [],' >> db.json
+        echo '  "emergence": [],' >> db.json
+        echo '  "encounter": []' >> db.json
+        echo '}' >> db.json
+        
       
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
